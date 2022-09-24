@@ -1,0 +1,139 @@
+/* ===================== GENERAL SETTINGS ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+/* Header */
+.header__logo, .header__nav, .social {
+    display: inline-block;
+}
+
+.header__nav__link {
+    display: inline-block;
+    padding: 16px 24px;
+}
+
+.header__nav__link a {
+    color: #000;
+}
+
+.header__nav__link a:hover{
+    color: #3182CE;
+}
+
+.header__nav__link--selected a{
+    font-weight: bold;
+    color: #3182CE;
+}
+
+.social__link {
+    padding: 16px 10px;
+}
+
+/* Footer */
+.footer {
+    margin-top: 100px;
+}
+
+.footer__first, .column {
+    display: inline-block;
+    width: 24.5%;
+}
+
+.footer__first__logo {
+    width: 50%;
+}
+
+.footer__down p, .footer__down a {
+    display: inline-block;
+}
+
+/* Whatsapp */
+.whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.whatsapp__link img {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+}
+
+/* Button Primary */
+.button-primary {
+    background: #54BD95;
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 40px;
+    border: 2px solid #54BD95;
+}
+
+.button-primary:hover {
+    background-color: #fff;
+    color: #54BD95;
+    border: 2px solid #54BD95;
+}
+
+/* ===================== PORTFOLIO ===================== */
+/* Cover */
+.cover {
+    margin-top: 50px;
+}
+
+.cover__left, .cover__right {
+    display: inline-block;
+    width: 49.5%;
+}
+
+/* Portfolio */
+.portfolio {
+    margin-top: 100px;
+}
+
+.portfolio__button__item {
+    display: inline-block;
+    padding: 16px 24px;
+    border: 2px solid #54BD95;
+    border-radius: 40px;
+}
+
+.portfolio__button__item:hover {
+    font-weight: bold;
+}
+
+.portfolio__button__item--selected {
+    font-weight: bold;
+}
+
+.port-card {
+    display: inline-block;
+}
+
+.port-card__content__img, .port-card__content__name {
+    display: inline-block;
+}
+
+.port-card__content__img {
+    width: 10%;
+}

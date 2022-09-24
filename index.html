@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" href="./favicon.ico">
+    <!-- Enlace externo de estilos -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/152ce6a8e1.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <img class="header__logo" src="./src/mscomp-logo.png" alt="Logo" width="100">
+        <nav class="header__nav">
+            <ul class="hedaer__nav__items">
+                <li class="header__nav__link header__nav__link--selected"> <a href="#">Home</a> </li>
+                <li class="header__nav__link"> <a href="./pages/portfolio.html" target="_blank">Portfolio</a>  </li>
+                <li class="header__nav__link"> <a href="./pages/services.html" target="_blank">Services</a> </li>
+                <li class="header__nav__link"> <a href="./pages/about.html" target="_blank">About</a> </li>
+                <li class="header__nav__link"> <a href="./pages/contact.html" target="_blank">Contact</a>  </li>
+            </ul>
+        </nav>
+        <!-- Utilizo la clase social por que tambien la utilizaré en el footer -->
+        <ul class="social">
+            <label class="social__link"><i class="fa fa-facebook"></i></label>
+            <label class="social__link"><i class="fa fa-linkedin"></i></label>
+            <label class="social__link"><i class="fa fa-instagram"></i></label>
+            <label class="social__link"><i class="fa fa-twitter"></i></label>
+        </ul>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Cover -->
+        <section class="cover">
+            <div class="cover__left">
+                <h1 class="cover__left__title">We're here to help you in all you need</h1>
+                <p class="cover__left__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia possimus harum ea aliquid cum tempore dolores, voluptates, ratione corporis reiciendis id, nemo dicta nesciunt amet. Eaque iusto doloremque saepe odio.
+                Nisi, veniam? Vero inventore dicta veniam harum aut officia odio excepturi magni quae quibusdam exercitationem ea obcaecati, aliquam deserunt similique illum labore dignissimos quia. Consequatur possimus voluptas porro perferendis voluptatibus.</p>
+                <div class="cover__left__buttons">
+                    <button class="button-primary">Get started</button>
+                    <button class="button-secondary">View Demo</button>
+                </div>
+            </div>
+            <div class="cover__right">
+                <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
+                <img class="cover__right__img" src="https://picsum.photos/200" alt="Home Image">
+            </div>
+        </section>
+        
+        <!-- Clients -->
+        <section class="clients">
+            <p class="clients__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+            <div class="clients__container">
+                <img src="./src/unplash-logo.png" alt="Unplash Logo">
+                <img src="./src/notion-logo.png" alt="Notion Logo">
+                <img src="./src/intercom-logo.png" alt="Intercom Logo">
+                <img src="./src/descript-logo.png" alt="Descript Logo">
+                <img src="./src/grammarly-logo.png" alt="Grammarly Logo">
+            </div>
+        </section>
+
+        <!-- Crafted for -->
+        <section class="craf">
+            <div class="craf__left">
+                <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
+                <img src="https://picsum.photos/200" alt="Image about crafted for">
+            </div>
+            <div class="craf__right">
+                <h2 class="craf__right__title">Crafted for</h2>
+                <p class="craf__right__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci optio obcaecati consectetur nesciunt, laboriosam quia iste doloribus quibusdam hic eveniet, saepe quae maxime soluta odit dolorem alias nam voluptas? Rem.
+                Ratione obcaecati voluptatum asperiores adipisci, cumque tempora voluptatem quia autem iste totam velit aut omnis corporis laudantium, modi accusamus provident tempore. Ullam, deleniti ratione tempore dolores ex rerum odio nobis.</p>
+                <div class="craf__right__container">
+                    <!-- Utilizo la clase port-card por que lo utilizare 4 veces en esta sección -->
+                    <div class="craf-list">
+                        <img class="craf-list__img" src="./src/thunder.png" alt="Image about Startup">
+                        <div class="craf-list__text">
+                            <h4>Startup</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                        </div>
+                    </div>
+                    <div class="craf-list">
+                        <img class="craf-list__img" src="./src/sass.png" alt="Image about Sass Business">
+                        <div class="craf-list__text">
+                            <h4>Sass Business</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                        </div>
+                    </div>
+                    <div class="craf-list">
+                        <img class="craf-list__img" src="./src/agency.png" alt="Image about Agency">
+                        <div class="craf-list__text">
+                            <h4>Agency</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                        </div>
+                    </div>
+                    <div class="craf-list">
+                        <img class="craf-list__img" src="./src/app.png" alt="Image about App Landing">
+                        <div class="craf-list__text">
+                            <h4>App Landing</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plans -->
+        <section class="plans">
+            <h2 class="plans__title">Choose a Plan that's right for you</h2>
+            <p class="plans__desc">Choose a plan that works best for you, feel free to contact us.</p>
+            <div class="plans__buttons">
+                <div class="buttons__container">
+                    <!-- Utilizo la clase button-primary y button-secondaryl por que es utilizado en el home y en Services -->
+                    <button class="button-secondary">Bil Monthly</button>
+                    <button class="button-primary">Bil Yearly</button>
+                </div>
+            </div>
+            <div class="plans__cards">
+                <!-- Utilizo la clase plan-card por que lo utilizaré 3 veces en esta sección -->
+                <div class="plan-card">
+                    <h4 class="plan-card__title">Basic</h4>
+                    <p class="plan-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut</p>
+                    <div class="plan-card__price">
+                        <span>$</span><p>99</p>
+                    </div>
+                    <p class="plan-card__save">Save $30 a year</p>
+                    <button class="button-primary">More info</button>
+                </div>
+                <div class="plan-card">
+                    <h4 class="plan-card__title">Pro</h4>
+                    <p class="plan-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut</p>
+                    <div class="plan-card__price">
+                        <span>$</span><p>199</p>
+                    </div>
+                    <p class="plan-card__save">Save $50 a year</p>
+                    <button class="button-primary">More info</button>
+                </div>
+                <div class="plan-card">
+                    <h4 class="plan-card__title">Enterprise</h4>
+                    <p class="plan-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut</p>
+                    <div class="plan-card__price">
+                        <span>$</span><p>299</p>
+                    </div>
+                    <p class="plan-card__save">Save $70 a year</p>
+                    <button class="button-primary">More info</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits -->
+        <section class="benefit">
+            <div class="benefit__left">
+                <h2 class="benefit__title">What benefit will you get with us?</h2>
+                <ul class="benefit-items">
+                    <li class="benefit-item"><i class="fa fa-check"></i>Lorem Ipsum is simply dummy text.</li>
+                    <li class="benefit-item"><i class="fa fa-check"></i>Lorem Ipsum is simply dummy text.</li>
+                    <li class="benefit-item"><i class="fa fa-check"></i>Lorem Ipsum is simply dummy text.</li>
+                    <li class="benefit-item"><i class="fa fa-check"></i>Lorem Ipsum is simply dummy text.</li>
+                    <li class="benefit-item"><i class="fa fa-check"></i>Lorem Ipsum is simply dummy text.</li>
+                </ul>
+            </div>
+            <div class="benefit__right">
+                <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
+                <img class="" src="https://picsum.photos/200" alt="Image about benefit">
+            </div>
+        </section>
+
+        <!-- Blog -->
+        <section class="blog">
+            <h2 class="blog__title">Our Latest Blog Posts</h2>
+            <p class="blog__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit seft yg</p>
+            <div class="blog__cards">
+                <!-- Utilizo la clase blog-card por que lo utilizaré 2 veces en esta sección -->
+                <div class="blog-card">
+                    <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
+                    <img class="blog-card__img" src="https://picsum.photos/200" alt="Image about the latest post">
+                    <div class="blog-card__date">
+                        <p>08-09-20</p>
+                        <p>Category</p>
+                    </div>
+                    <h4 class="blog-card__title">Lorem Ipsum is simply dummy text.</h4>
+                    <p class="blog-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+                </div>
+                <div class="blog-card">
+                    <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
+                    <img class="blog-card__img" src="https://picsum.photos/200" alt="Image about the latest post">
+                    <div class="blog-card__date">
+                        <p>08-09-20</p>
+                        <p>Category</p>
+                    </div>
+                    <h4 class="blog-card__title">Lorem Ipsum is simply dummy text.</h4>
+                    <p class="blog-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+                </div>
+                <div class="blog__targets">
+                    <!-- Utilizo la clase blog-target por que lo utilizaré 4 veces en esta sección -->
+                    <div class="blog__target">
+                        <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
+                        <img class="blog-target__img" src="https://picsum.photos/200" alt="Image about the latest post">
+                        <div class="blog-target__content">
+                            <div class="blog-target__date">
+                                <p>08-09-20</p>
+                                <p>Category</p>
+                            </div>
+                            <h5 class="blog-taget__content__title">Lorem Ipsum is simply dummy text, lais.</h5>
+                        </div>
+                        <div class="blog__target">
+                            <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
+                            <img class="blog-target__img" src="https://picsum.photos/200" alt="Image about the latest post">
+                            <div class="blog-target__content">
+                                <div class="blog-target__date">
+                                    <p>08-09-20</p>
+                                    <p>Category</p>
+                                </div>
+                                <h5 class="blog-taget__content__title">Lorem Ipsum is simply dummy text, lais.</h5>
+                            </div>
+                        </div>
+                        <div class="blog__target">
+                            <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
+                            <img class="blog-target__img" src="https://picsum.photos/200" alt="Image about the latest post">
+                            <div class="blog-target__content">
+                                <div class="blog-target__date">
+                                    <p>08-09-20</p>
+                                    <p>Category</p>
+                                </div>
+                                <h5 class="blog-taget__content__title">Lorem Ipsum is simply dummy text, lais.</h5>
+                            </div>
+                        </div>
+                        <div class="blog__target">
+                            <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
+                            <img class="blog-target__img" src="https://picsum.photos/200" alt="Image about the latest post">
+                            <div class="blog-target__content">
+                                <div class="blog-target__date">
+                                    <p>08-09-20</p>
+                                    <p>Category</p>
+                                </div>
+                                <h5 class="blog-taget__content__title">Lorem Ipsum is simply dummy text, lais.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="button-primary">See All Blog Posts</button>
+        </section>
+
+        <!-- Stay Tunned -->
+        <section class="tunned">
+            <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
+            <img class="tunned__img" src="https://picsum.photos/200" alt="Image about tunned">
+            <div class="tunned__right">
+                <h3 class="tunned__title">Curious to learn more? Stay tuned</h3>
+                <p class="tunned__desc">You let us know whenever you want us to update anything or think something can be optimized.</p>
+                <div class="tunned__send">
+                    <label class=""><i class="fa fa-envelope"></i></label>
+                    <input type="email" placeholder="mscomp@gmail.com" required>
+                    <button class="button-primary">Send</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial -->
+        <section class="test">
+            <h2 class="test__title"></h2>
+            <p class="test__desc"></p>
+            <div class="test__cards">
+                <!-- Utilizo la clase test-card por que lo utilizaré 3 veces en esta sección -->
+                <div class="test-card">
+                    <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
+                    <img class="test-card__img" src="https://picsum.photos/200" alt="Image about the personwho made the comment">
+                    <p class="test-card__comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+                    <h4 class="test-card__name">Lorem Ipsum</h4>
+                    <p class="test-card__position">Lead Designer, UIdeck</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- WhatsApp -->
+    <div class="whatsapp"> 
+        <div class="whatsapp__link">
+            <img src="./src/whatsapp.png"> 
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__up">
+            <div class="footer__first">
+                <img class="footer__first__logo" src="./src/mscomp-logo.png" alt="Logo">
+                <p class="footer__first__desc">Lorem ipsum dolor sit amet, consectetur adipis elit. sed do eiusmod ter incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+                <ul class="social">
+                    <label class="social__link"><i class="fa fa-facebook"></i></label>
+                    <label class="social__link"><i class="fa fa-linkedin"></i></label>
+                    <label class="social__link"><i class="fa fa-instagram"></i></label>
+                    <label class="social__link"><i class="fa fa-twitter"></i></label>
+                </ul>
+            </div>
+            <!-- Utilizo la clase column por que son 3 columnas con mismos estilos en el footer -->
+            <div class="column">
+                <h3 class="column__title">Company</h3>
+                <ul class="column__items">
+                    <li class="column__item">About</li>
+                    <li class="column__item">Blog</li>
+                    <li class="column__item">Portfolio</li>
+                    <li class="column__item">Services</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3 class="column__title">Help & Support</h3>
+                <ul class="column__items">
+                    <li class="column__item">Contact</li>
+                    <li class="column__item">FAQ</li>
+                    <li class="column__item">Testimonial</li>
+                    <li class="column__item">Support Center</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3 class="column__title">Information</h3>
+                <ul class="column__items"> 
+                    <li class="column__item">All Services</li>
+                    <li class="column__item">Product Design</li>
+                    <li class="column__item">Web Development</li>
+                    <li class="column__item">Consulting & Support</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__down">
+            <p>Copyright@2022 <a href="#">MS Comp</a>.All rights reserved</p>
+            <a href="#">Terms and conditions</a>
+        </div>
+    </footer>
+</body>
+</html>
