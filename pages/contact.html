@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
     <link rel="icon" href="../favicon.ico">
+    <!-- Estilos de Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Enlace externo de estilos -->
     <link rel="stylesheet" href="../css/styles.css">
     <!-- Link google fonts -->
@@ -18,23 +20,30 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <img class="header__logo" src="../src/mscomp-logo.png" alt="Logo" width="100">
-        <nav class="header__nav">
-            <ul class="hedaer__nav__items">
-                <li class="header__nav__link"> <a href="../index.html" target="_blank">Home</a> </li>
-                <li class="header__nav__link"> <a href="./portfolio.html" target="_blank">Portfolio</a>  </li>
-                <li class="header__nav__link"> <a href="./services.html" target="_blank">Services</a> </li>
-                <li class="header__nav__link"> <a href="./about.html" target="_blank">About</a> </li>
-                <li class="header__nav__link header__nav__link--selected"> <a href="#">Contact</a>  </li>
+        <section class="header__section">
+            <img class="header__logo" src="../src/mscomp-logo2.png" alt="Logo" width="100">
+            <nav class="header__nav">
+                <ul class="hedaer__nav__items mb-0">
+                    <li class="header__nav__link"> <a href="../index.html" class="text-decoration-none">Home</a> </li>
+                    <li class="header__nav__link"> <a href="./portfolio.html" class="text-decoration-none">Portfolio</a> </li>
+                    <li class="header__nav__link"> <a href="./services.html" class="text-decoration-none">Services</a> </li>
+                    <li class="header__nav__link"> <a href="./about.html" class="text-decoration-none">About</a> </li>
+                    <li class="header__nav__link header__nav__link--selected"> <a href="#" class="text-decoration-none">Contact</a> </li>
+                    <!-- <li class="header__nav__link"> <a href="../index.html" target="_blank">Home</a> </li>
+                    <li class="header__nav__link"> <a href="./portfolio.html" target="_blank">Portfolio</a> </li>
+                    <li class="header__nav__link"> <a href="./services.html" target="_blank">Services</a> </li>
+                    <li class="header__nav__link"> <a href="./about.html" target="_blank">About</a> </li>
+                    <li class="header__nav__link header__nav__link--selected"> <a href="#">Contact</a> </li> -->
+                </ul>
+            </nav>
+            <!-- Utilizo la clase social por que tambien la utilizaré en el footer -->
+            <ul class="social mb-0">
+                <label class="social__link"><i class="fa fa-facebook"></i></label>
+                <label class="social__link"><i class="fa fa-linkedin"></i></label>
+                <label class="social__link"><i class="fa fa-instagram"></i></label>
+                <label class="social__link"><i class="fa fa-twitter"></i></label>
             </ul>
-        </nav>
-        <!-- Utilizo la clase social por que tambien la utilizaré en el footer -->
-        <ul class="social">
-            <label class="social__link"><i class="fa fa-facebook"></i></label>
-            <label class="social__link"><i class="fa fa-linkedin"></i></label>
-            <label class="social__link"><i class="fa fa-instagram"></i></label>
-            <label class="social__link"><i class="fa fa-twitter"></i></label>
-        </ul>
+        </section>
     </header>
 
     <!-- Main -->
@@ -113,9 +122,9 @@
     <footer class="footer">
         <div class="footer__up">
             <div class="footer__first">
-                <img class="footer__first__logo" src="../src/mscomp-logo.png" alt="Logo">
-                <p class="footer__first__desc">Lorem ipsum dolor sit amet, consectetur adipis elit. sed do eiusmod ter incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
-                <ul class="social">
+                <img class="footer__first__logo" src="../src/mscomp-logo1.png" alt="Logo">
+                <p class="footer__first__desc mb-0">Enjoy creating your website</p>
+                <ul class="social mb-0 ps-0">
                     <label class="social__link"><i class="fa fa-facebook"></i></label>
                     <label class="social__link"><i class="fa fa-linkedin"></i></label>
                     <label class="social__link"><i class="fa fa-instagram"></i></label>
@@ -125,17 +134,17 @@
             <!-- Utilizo la clase column por que son 3 columnas con mismos estilos en el footer -->
             <div class="column">
                 <h3 class="column__title">Company</h3>
-                <ul class="column__items">
-                    <li class="column__item">About</li>
+                <ul class="column__items mb-0 ps-0">
+                    <li class="column__item"><a href="../pages/about.html" class="text-decoration-none">About</a></li>
                     <li class="column__item">Blog</li>
-                    <li class="column__item">Portfolio</li>
-                    <li class="column__item">Services</li>
+                    <li class="column__item"><a href="../pages/portfolio.html" class="text-decoration-none">Portfolio</a></li>
+                    <li class="column__item"><a href="../pages/services.html" class="text-decoration-none">Services</a></li>
                 </ul>
             </div>
             <div class="column">
                 <h3 class="column__title">Help & Support</h3>
-                <ul class="column__items">
-                    <li class="column__item">Contact</li>
+                <ul class="column__items mb-0 ps-0">
+                    <li class="column__item"><a href="#" class="text-decoration-none">Contact</a></li>
                     <li class="column__item">FAQ</li>
                     <li class="column__item">Testimonial</li>
                     <li class="column__item">Support Center</li>
@@ -143,7 +152,7 @@
             </div>
             <div class="column">
                 <h3 class="column__title">Information</h3>
-                <ul class="column__items"> 
+                <ul class="column__items mb-0 ps-0"> 
                     <li class="column__item">All Services</li>
                     <li class="column__item">Product Design</li>
                     <li class="column__item">Web Development</li>
@@ -152,8 +161,10 @@
             </div>
         </div>
         <div class="footer__down">
-            <p>Copyright@2022 <a href="../index.html">MS Comp</a>.All rights reserved</p>
-            <a href="#">Terms and conditions</a>
+            <div class="footer__down__container d-flex justify-content-between align-items-center">
+                <p class="mb-0">Copyright@2022 <a href="#" class="text-decoration-none">MS Comp</a>.All rights reserved</p>
+                <a href="#" class="text-decoration-none">Terms and conditions</a>
+            </div>
         </div>
     </footer>
 </body>

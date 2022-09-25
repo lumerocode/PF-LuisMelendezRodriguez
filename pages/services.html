@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
     <link rel="icon" href="../favicon.ico">
+    <!-- Estilos de Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Enlace externo de estilos -->
     <link rel="stylesheet" href="../css/styles.css">
     <!-- Link google fonts -->
@@ -13,28 +15,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/152ce6a8e1.js" crossorigin="anonymous"></script>
+    <!-- Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     <title>Services</title>
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
-        <img class="header__logo" src="../src/mscomp-logo.png" alt="Logo" width="100">
-        <nav class="header__nav">
-            <ul class="hedaer__nav__items">
-                <li class="header__nav__link"> <a href="../index.html" target="_blank">Home</a> </li>
-                <li class="header__nav__link"> <a href="./portfolio.html" target="_blank">Portfolio</a>  </li>
-                <li class="header__nav__link header__nav__link--selected"> <a href="#">Services</a> </li>
-                <li class="header__nav__link"> <a href="./about.html" target="_blank">About</a> </li>
-                <li class="header__nav__link"> <a href="./contact.html" target="_blank">Contact</a>  </li>
+    <header class="header animate__animated animate__fadeIn">
+        <section class="header__section">
+            <div class="burger-menu">
+                <label class="burger-menu__icon"><i class="fa fa-bars"></i></label>
+            </div>
+            <img class="header__logo" src="../src/mscomp-logo2.png" alt="Logo" width="100">
+            <nav class="header__nav">
+                <ul class="hedaer__nav__items mb-0">
+                    <li class="header__nav__link"> <a href="../index.html" class="text-decoration-none">Home</a> </li>
+                    <li class="header__nav__link"> <a href="./portfolio.html" class="text-decoration-none">Portfolio</a> </li>
+                    <li class="header__nav__link header__nav__link--selected"> <a href="#" class="text-decoration-none">Services</a> </li>
+                    <li class="header__nav__link"> <a href="./about.html" class="text-decoration-none">About</a> </li>
+                    <li class="header__nav__link"> <a href="./contact.html" class="text-decoration-none">Contact</a> </li>
+                    <!-- <li class="header__nav__link"> <a href="../index.html" target="_blank">Home</a> </li>
+                    <li class="header__nav__link"> <a href="./portfolio.html" target="_blank">Portfolio</a> </li>
+                    <li class="header__nav__link header__nav__link--selected"> <a href="#">Services</a> </li>
+                    <li class="header__nav__link"> <a href="./about.html" target="_blank">About</a> </li>
+                    <li class="header__nav__link"> <a href="./contact.html" target="_blank">Contact</a> </li> -->
+                </ul>
+            </nav>
+            <!-- Utilizo la clase social por que tambien la utilizaré en el footer -->
+            <ul class="social mb-0">
+                <label class="social__link"><i class="fa fa-facebook"></i></label>
+                <label class="social__link"><i class="fa fa-linkedin"></i></label>
+                <label class="social__link"><i class="fa fa-instagram"></i></label>
+                <label class="social__link"><i class="fa fa-twitter"></i></label>
             </ul>
-        </nav>
-        <!-- Utilizo la clase social por que tambien la utilizaré en el footer -->
-        <ul class="social">
-            <label class="social__link"><i class="fa fa-facebook"></i></label>
-            <label class="social__link"><i class="fa fa-linkedin"></i></label>
-            <label class="social__link"><i class="fa fa-instagram"></i></label>
-            <label class="social__link"><i class="fa fa-twitter"></i></label>
-        </ul>
+        </section>
     </header>
     
     <!-- Main -->
@@ -42,38 +56,37 @@
         <!-- Cover -->
         <section class="cover">
             <div class="cover__left">
-                <h1 class="cover__left__title">We help your business grow faster</h1>
-                <p class="cover__left__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia possimus harum ea aliquid cum tempore dolores, voluptates, ratione corporis reiciendis id, nemo dicta nesciunt amet. Eaque iusto doloremque saepe odio.
-                Nisi, veniam? Vero inventore dicta veniam harum aut officia odio excepturi magni quae quibusdam exercitationem ea obcaecati, aliquam deserunt similique illum labore dignissimos quia. Consequatur possimus voluptas porro perferendis voluptatibus.</p>
+                <h1 class="cover__left__title animate__animated animate__backInLeft">We help your business grow faster</h1>
+                <p class="cover__left__desc animate__animated animate__backInLeft">We help your company take the next step, taking it to the digital world. We help your company take the next step, taking it to the digital world. We help your company take the next step, taking it to the digital world. We help your company take the next step, taking it to the digital world</p>
             </div>
             <div class="cover__right">
                 <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
-                <img class="cover__right__img" src="https://picsum.photos/200" alt="Services Image">
+                <img class="cover__right__img animate__animated animate__backInRight" src="../src/services_cover.png" alt="Services Image">
             </div>
         </section>
 
         <!-- Our Services -->
         <section class="services">
-            <h2 class="services__title">Our Services</h2>
-            <p class="services__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei.</p>
+            <h2 class="services__title animate__animated animate__fadeInLeft">Our Services</h2>
+            <p class="services__desc animate__animated animate__fadeInRight">Choose the plan that works best for you, feel free to contact us.</p>
             <div class="services__buttons">
-                <div class="buttons__container">
+                <div class="buttons__container animate__animated animate__fadeInLeft">
                     <!-- Utilizo la clase button-primary y button-secondaryl por que es utilizado en el home y en Services -->
                     <button class="button-secondary">Bil Monthly</button>
                     <button class="button-primary">Bil Yearly</button>
                 </div>
             </div>
-            <div class=services__cards"">
+            <div class="services__cards animate__animated animate__fadeInUp row">
                 <!-- Utilizo la clase servi-card por que lo utilizaré 3 veces en esta sección -->
-                <div class="servi-card">
+                <div class="servi-card col-lg-3 col-12">
                     <h4 class="servi-card__title">Basic</h4>
-                    <p class="servi-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut</p>
+                    <p class="servi-card__desc">Have a go and test your superpowers with this plan.</p>
                     <div class="servi-card__price">
                         <span>$</span><p>99</p>
                     </div>
                     <p class="servi-card__save">Save $30 a year</p>
                     <div class="servi-card__items">
-                        <ul class="card-items">
+                        <ul class="card-items ps-0 mb-0">
                             <li class="card-item"><i class="fa fa-check"></i>Lorem ipsum do.</li>
                             <li class="card-item"><i class="fa fa-check"></i>Lorem ipsum do.</li>
                             <li class="card-item"><i class="fa fa-check"></i>Lorem ipsum do.</li>
@@ -83,15 +96,15 @@
                         <button class="button-primary">Get Started</button>
                     </div>
                 </div>
-                <div class="servi-card">
+                <div class="servi-card servi-card--selected col-lg-3 col-12>
                     <h4 class="servi-card__title">Pro</h4>
-                    <p class="servi-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut</p>
+                    <p class="servi-card__desc">Experiment the power of infinite possibilities</p>
                     <div class="servi-card__price">
                         <span>$</span><p>199</p>
                     </div>
                     <p class="servi-card__save">Save $50 a year</p>
                     <div class="servi-card__items">
-                        <ul class="card-items">
+                        <ul class="card-items ps-0 mb-0">
                             <li class="card-item"><i class="fa fa-check"></i>Lorem ipsum do.</li>
                             <li class="card-item"><i class="fa fa-check"></i>Lorem ipsum do.</li>
                             <li class="card-item"><i class="fa fa-check"></i>Lorem ipsum do.</li>
@@ -101,15 +114,15 @@
                         <button class="button-primary">Get Started</button>
                     </div>
                 </div>
-                <div class="servi-card">
+                <div class="servi-card col-lg-3 col-12">
                     <h4 class="servi-card__title">Enterprise</h4>
-                    <p class="servi-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut</p>
+                    <p class="servi-card__desc">Unveil new superpowers and join the Design Leaque</p>
                     <div class="servi-card__price">
                         <span>$</span><p>299</p>
                     </div>
                     <p class="servi-card__save">Save $70 a year</p>
                     <div class="servi-card__items">
-                        <ul class="card-items">
+                        <ul class="card-items ps-0 mb-0">
                             <li class="card-item"><i class="fa fa-check"></i>Lorem ipsum do.</li>
                             <li class="card-item"><i class="fa fa-check"></i>Lorem ipsum do.</li>
                             <li class="card-item"><i class="fa fa-check"></i>Lorem ipsum do.</li>
@@ -132,11 +145,11 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer__up">
+        <div class="footer__up col-12">
             <div class="footer__first">
-                <img class="footer__first__logo" src="../src/mscomp-logo.png" alt="Logo">
-                <p class="footer__first__desc">Lorem ipsum dolor sit amet, consectetur adipis elit. sed do eiusmod ter incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
-                <ul class="social">
+                <img class="footer__first__logo" src="../src/mscomp-logo1.png" alt="Logo">
+                <p class="footer__first__desc mb-0">Enjoy creating your website</p>
+                <ul class="social mb-0 ps-0">
                     <label class="social__link"><i class="fa fa-facebook"></i></label>
                     <label class="social__link"><i class="fa fa-linkedin"></i></label>
                     <label class="social__link"><i class="fa fa-instagram"></i></label>
@@ -146,17 +159,17 @@
             <!-- Utilizo la clase column por que son 3 columnas con mismos estilos en el footer -->
             <div class="column">
                 <h3 class="column__title">Company</h3>
-                <ul class="column__items">
-                    <li class="column__item">About</li>
+                <ul class="column__items mb-0 ps-0">
+                    <li class="column__item"><a href="../pages/about.html" class="text-decoration-none">About</a></li>
                     <li class="column__item">Blog</li>
-                    <li class="column__item">Portfolio</li>
-                    <li class="column__item">Services</li>
+                    <li class="column__item"><a href="../pages/portfolio.html" class="text-decoration-none">Portfolio</a></li>
+                    <li class="column__item"><a href="#" class="text-decoration-none">Services</a></li>
                 </ul>
             </div>
             <div class="column">
                 <h3 class="column__title">Help & Support</h3>
-                <ul class="column__items">
-                    <li class="column__item">Contact</li>
+                <ul class="column__items mb-0 ps-0">
+                    <li class="column__item"><a href="../pages/contact.html" class="text-decoration-none">Contact</a></li>
                     <li class="column__item">FAQ</li>
                     <li class="column__item">Testimonial</li>
                     <li class="column__item">Support Center</li>
@@ -164,7 +177,7 @@
             </div>
             <div class="column">
                 <h3 class="column__title">Information</h3>
-                <ul class="column__items"> 
+                <ul class="column__items mb-0 ps-0"> 
                     <li class="column__item">All Services</li>
                     <li class="column__item">Product Design</li>
                     <li class="column__item">Web Development</li>
@@ -173,8 +186,10 @@
             </div>
         </div>
         <div class="footer__down">
-            <p>Copyright@2022 <a href="../index.html">MS Comp</a>.All rights reserved</p>
-            <a href="#">Terms and conditions</a>
+            <div class="footer__down__container">
+                <p class="mb-0">Copyright@2022 <a href="#" class="text-decoration-none">MS Comp</a>.All rights reserved</p>
+                <a href="#" class="text-decoration-none">Terms and conditions</a>
+            </div>
         </div>
     </footer>
 </body>
