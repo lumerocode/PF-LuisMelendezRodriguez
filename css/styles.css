@@ -92,6 +92,17 @@ h2 {
     padding: 10px;
 }
 
+/* ===================== RESPONSIVE MENU - MOBILE - BOOTSTRAP MODIFIED===================== */
+
+.bg-light {
+    background-color: #54BD95!important;
+}
+
+.active {
+    color: white!important;
+    font-weight: bold!important;
+}
+
 /* ===================== RESPONSIVE COVER - MOBILE ===================== */
 @media only screen and (min-width: 0px) and (max-width: 768px){
     
@@ -199,34 +210,6 @@ h2 {
     color: var(--color-primary);
 }
 
-/* ===================== RESPONSIVE FOOTER - MOBILE ===================== */
-@media only screen and (min-width: 0px) and (max-width: 767px){
-    .footer__up {
-        display: flex;
-        flex-direction: column;
-        max-width: var(--container-width-mobile);
-    }
-
-    .footer__first {
-        text-align: center;
-    }
-
-    .footer .social {
-        justify-content: center;
-    }
-
-    .column {
-        text-align: center;
-    }
-
-    .footer__down__container {
-        max-width: var(--container-width-mobile);
-        display: flex;
-        flex-direction: column;
-    }
-    
-}
-
 /* Whatsapp */
 .whatsapp {
     position: fixed;
@@ -282,26 +265,6 @@ h2 {
 
 .cover__right__img {
     width: 100%;
-}
-
-/* ===================== RESPONSIVE COVER - MOBILE ===================== */
-@media only screen and (min-width: 0px) and (max-width: 767px){
-    
-    .cover {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-    }
-
-    .cover__left {
-        padding-right: 0rem;
-    }
-
-    .cover__left__title {
-        font-size: 3.2rem;
-        text-align: center;
-    }
-
 }
 
 /* ===================== PORTFOLIO ===================== */
@@ -463,19 +426,6 @@ h2 {
 .servi-card--selected .button-primary:hover {
     background-color: transparent;
     color: var(--color-primary);
-}
-
-/* ===================== RESPONSIVE SERVICES - MOBILE ===================== */
-
-@media only screen and (min-width: 0px) and (max-width: 767px){
-
-    .services .button-primary {
-        padding: 9px 30px;
-    }
-
-    .servi-card {
-        margin-bottom: 3rem;
-    }
 }
 
 /* ===================== ABOUT ===================== */
