@@ -55,7 +55,7 @@
                 </div>
               </nav>
 
-            
+
             <img class="header__logo d-none d-sm-block" src="../src/mscomp-logo2.png" alt="Logo" width="100">
             <nav class="header__nav">
                 <ul class="hedaer__nav__items mb-0">
@@ -66,12 +66,12 @@
                     <li class="header__nav__link"> <a href="./contact.html" class="text-decoration-none">Contact</a> </li>
                     <!-- <li class="header__nav__link"> <a href="../index.html" target="_blank">Home</a> </li>
                     <li class="header__nav__link"> <a href="./portfolio.html" target="_blank">Portfolio</a> </li>
-                    <li class="header__nav__link"> <a href="./services.html" target="_blank">Services</a> </li>
-                    <li class="header__nav__link header__nav__link--selected"> <a href="#">About</a> </li>
+                    <li class="header__nav__link header__nav__link--selected"> <a href="#">Services</a> </li>
+                    <li class="header__nav__link"> <a href="./about.html" target="_blank">About</a> </li>
                     <li class="header__nav__link"> <a href="./contact.html" target="_blank">Contact</a> </li> -->
                 </ul>
             </nav>
-            <!-- Utilizo la clase social por que tambien la utilizaré en el footer y en cada  miembro del team -->
+            <!-- Utilizo la clase social por que tambien la utilizaré en el footer -->
             <ul class="social mb-0">
                 <label class="social__link"><i class="fa fa-facebook"></i></label>
                 <label class="social__link"><i class="fa fa-linkedin"></i></label>
@@ -85,22 +85,23 @@
     <main>
         <!-- Cover -->
         <section class="cover">
-            <div class="cover__left">
-                <h1 class="cover__left__title animate__animated animate__backInLeft">Our history and what we love to do</h1>
-                <p class="cover__left__desc animate__animated animate__backInLeft">
-                    The Fire TRANSFORMS and we have decided to TRANSFORM the economy of the World based on technology. 
-                    The Fire TRANSFORMS and we have decided to TRANSFORM the economy of the World based on technology. The Fire TRANSFORMS and we have decided to TRANSFORM the economy of the World based on technology.</p>
+            <div class="cover__left pe-lg-5 text-lg-start text-center">
+                <h1 class="cover__left__title animate__animated animate__backInLeft ">We love improve ourselves</h1>
+                <p class="cover__left__desc animate__animated animate__backInLeft">The Fire TRANSFORMS and we have decided to TRANSFORM the economy of the World based on technology. The Fire TRANSFORMS and we have decided to TRANSFORM the economy of the World based on technology. The Fire TRANSFORMS and we have decided to TRANSFORM the economy of the World based on technology.</p>
             </div>
-            <div class="cover__right">
+            <div class="cover__right d-lg-flex d-none">
                 <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
-                <img class="cover__right__img animate__animated animate__fadeInRight" src="../src/about_cover.png" alt="About us Image">
+                <img class="cover__right__img d-none d-sm-block animate__animated animate__backInRight" src="../src/about_cover.png" alt="Services Image">
             </div>
         </section>
 
+        
+        
+
         <!-- What we do -->
         <section class="wedo">
-            <h2 class="wedo__title animate__animated animate__fadeInLeft">What we do</h2>
-            <p class="wedo__desc animate__animated animate__fadeInUp">We are a team made up of creatives, designers, programmers and communicators willing to innovate.
+            <h2 class="wedo__title animate__animated animate__fadeInLeft text-center">What we do</h2>
+            <p class="wedo__desc animate__animated animate__fadeInUp text-center">We are a team made up of creatives, designers, programmers and communicators willing to innovate.
                 We believe that technology is democratizing technology and that every 3 months the world changes enormously, so we must continually transform or die trying.
                 We listen to your problem and look for a fast, cheap and high learning solution and then iterate on a better solution.
                 Our team is 24 years old on average, but the lack of years for us does not mean a lack of experience but a great desire to transform everything with the most cutting-edge technologies on the market.</p>
@@ -110,21 +111,21 @@
 
         <!-- Vision - Mission -->
         <section class="vimi">
-            <div class="vimi__up animate__animated animate__fadeInLeft">
+            <div class="vimi__up animate__animated animate__fadeInLeft row flex-lg-column-reverse flex-column-reverse">
                 <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
-                <img class="vimi__img" src="../src/about_vision.jpg" alt="Mission Image">
-                <div class="vimi__up__content">
+                <img class="vimi__img col w-75" src="../src/about_vision.jpg" alt="Mission Image">
+                <div class="vimi__up__content col text-center">
                     <h2 class="vimi__up__title">Vision</h2>
                     <p class="vimi__up__desc">
                         To be recognized as a company with quality services, excellence and comprehensiveness. To be perceived as a strategic ally, through the generation of value and with a high level of satisfaction of its clients, employees and partners.</p>
                 </div>
             </div>
-            <div class="vimi__down animate__animated animate__fadeInRight">
-                <div class="vimi__down__content">
+            <div class="vimi__down animate__animated animate__fadeInRight row flex-column">
+                <div class="vimi__down__content col text-center">
                     <h2 class="vimi__down__title">Mision</h2>
                     <p class="vimi__down__desc">Build the best team of professionals with the illusion of transforming and improving companies and society through technology from specialization in the latest solutions and in the different challenges of the market. Do it as a large family, made up of good people who enjoy becoming a global benchmark with a vocation for growth from their own land. Public and private organizations work with us because we are experts in solving their technology needs and challenges.</p>
                 </div>
-                <img class="vimi__img" src="../src/about_mision.jpg" alt="Vision Image">
+                <img class="vimi__img col w-75" src="../src/about_mision.jpg" alt="Vision Image">
             </div>
         </section>
 
@@ -132,9 +133,9 @@
         <section class="team">
             <h2 class="team__title cover__left__title animate__animated animate__backInLeft">Our Team</h2>
             <p class="team__desc animate__animated animate__fadeInUp">These are our professionals who will make your project a reality.</p>
-            <div class="team__content animate__animated animate__fadeInUp">
+            <div class="team__content animate__animated animate__fadeInUp row">
                 <!-- Utilizo la clase person por que la utilizaré 3 veces en este contenedor-->
-                <div class="person">
+                <div class="person col">
                     <img class="person__pic" src="../src/about_person1.jpg" alt="Image about first member of the team">
                     <p class="person__name">Luis Meléndez Rodriguez</p>
                     <p class="person__position">Frontend Developer</p>
@@ -145,7 +146,7 @@
                         <label class="social__link"><i class="fa fa-twitter"></i></label>
                     </ul>
                 </div>
-                <div class="person">
+                <div class="person col">
                     <img class="person__pic" src="../src/about_person2.jpg" alt="Image about second member of the team">
                     <p class="person__name">Milagros Meléndez Rodriguez</p>
                     <p class="person__position">UX/UI Designern</p>
@@ -156,7 +157,7 @@
                         <label class="social__link"><i class="fa fa-twitter"></i></label>
                     </ul>
                 </div>
-                <div class="person">
+                <div class="person col">
                     <img class="person__pic" src="../src/about_person3.jpg" alt="Image about third member of the team">
                     <p class="person__name">Olinda Rodriguez Linares</p>
                     <p class="person__position">Backend Developer</p>
@@ -180,11 +181,11 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer__up">
-            <div class="footer__first">
+        <div class="footer__up d-flex justify-content-between row">
+            <div class="col-xs-12 col-md-12 col-lg-3 text-lg-start text-center">
                 <img class="footer__first__logo" src="../src/mscomp-logo1.png" alt="Logo">
                 <p class="footer__first__desc mb-0">Enjoy creating your website</p>
-                <ul class="social mb-0 ps-0">
+                <ul class="social mb-0 ps-0 justify-content-lg-start justify-content-center">
                     <label class="social__link"><i class="fa fa-facebook"></i></label>
                     <label class="social__link"><i class="fa fa-linkedin"></i></label>
                     <label class="social__link"><i class="fa fa-instagram"></i></label>
@@ -192,7 +193,7 @@
                 </ul>
             </div>
             <!-- Utilizo la clase column por que son 3 columnas con mismos estilos en el footer -->
-            <div class="column">
+            <div class="col-xs-12 col-md-12 col-lg-3 text-lg-start text-center">
                 <h3 class="column__title">Company</h3>
                 <ul class="column__items mb-0 ps-0">
                     <li class="column__item"><a href="#" class="text-decoration-none">About</a></li>
@@ -201,7 +202,7 @@
                     <li class="column__item"><a href="../pages/services.html" class="text-decoration-none">Services</a></li>
                 </ul>
             </div>
-            <div class="column">
+            <div class="col-xs-12 col-md-12 col-lg-3 text-lg-start text-center">
                 <h3 class="column__title">Help & Support</h3>
                 <ul class="column__items mb-0 ps-0">
                     <li class="column__item"><a href="../pages/contact.html" class="text-decoration-none">Contact</a></li>
@@ -210,7 +211,7 @@
                     <li class="column__item">Support Center</li>
                 </ul>
             </div>
-            <div class="column">
+            <div class="col-xs-12 col-md-12 col-lg-3 text-lg-start text-center">
                 <h3 class="column__title">Information</h3>
                 <ul class="column__items mb-0 ps-0"> 
                     <li class="column__item">All Services</li>
@@ -221,9 +222,9 @@
             </div>
         </div>
         <div class="footer__down">
-            <div class="footer__down__container d-flex justify-content-between align-items-center">
-                <p class="mb-0">Copyright@2022 <a href="#" class="text-decoration-none">MS Comp</a>.All rights reserved</p>
-                <a href="#" class="text-decoration-none">Terms and conditions</a>
+            <div class="footer__down__container d-flex justify-content-between row">
+                <p class="mb-0 col-xs-12 col-md-12 col-lg-4 text-lg-start text-center">Copyright@2022 <a href="#" class="text-decoration-none">MS Comp</a>.All rights reserved</p>
+                <a href="#" class="text-decoration-none col-xs-12 col-md-12 col-lg-4 text-lg-end text-center">Terms and conditions</a>
             </div>
         </div>
     </footer>

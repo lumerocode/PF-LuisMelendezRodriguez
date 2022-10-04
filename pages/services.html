@@ -84,22 +84,23 @@
     <main>
         <!-- Cover -->
         <section class="cover">
-            <div class="cover__left">
-                <h1 class="cover__left__title animate__animated animate__backInLeft">We help your business grow faster</h1>
+            <div class="cover__left pe-lg-5 text-lg-start text-center">
+                <h1 class="cover__left__title animate__animated animate__backInLeft ">We help your business grow faster</h1>
                 <p class="cover__left__desc animate__animated animate__backInLeft">We help your company take the next step, taking it to the digital world. We help your company take the next step, taking it to the digital world. We help your company take the next step, taking it to the digital world. We help your company take the next step, taking it to the digital world</p>
             </div>
-            <div class="cover__right">
+            <div class="cover__right d-lg-flex d-none">
                 <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
                 <img class="cover__right__img d-none d-sm-block animate__animated animate__backInRight" src="../src/services_cover.png" alt="Services Image">
             </div>
         </section>
+
 
         <!-- Our Services -->
         <section class="services">
             <h2 class="services__title animate__animated animate__fadeInLeft">Our Services</h2>
             <p class="services__desc animate__animated animate__fadeInRight">Choose the plan that works best for you, feel free to contact us.</p>
             <div class="d-flex justify-content-center">
-                <div class="buttons__container animate__animated animate__fadeInLeft">
+                <div class="buttons__container animate__animated animate__fadeInLeft d-flex flex-lg-row flex-column">
                     <!-- Utilizo la clase button-primary y button-secondaryl por que es utilizado en el home y en Services -->
                     <button class="button-secondary">Bil Monthly</button>
                     <button class="button-primary">Bil Yearly</button>
@@ -107,9 +108,9 @@
             </div>
 
             
-            <div class="animate__animated animate__fadeInUp row justify-content-between mt-5">
+            <div class="animate__animated animate__fadeInUp justify-content-between mt-5 row ">
                 <!-- Utilizo la clase servi-card por que lo utilizaré 3 veces en esta sección -->
-                <div class="servi-card col-sm-12">
+                <div class="servi-card mb-lg-0 mb-5">
                     <h4 class="servi-card__title">Basic</h4>
                     <p class="servi-card__desc">Have a go and test your superpowers with this plan.</p>
                     <div class="servi-card__price">
@@ -127,7 +128,7 @@
                         <button class="button-primary">Get Started</button>
                     </div>
                 </div>                
-                <div class="servi-card servi-card--selected col-sm-12">
+                <div class="servi-card servi-card--selected mb-lg-0 mb-5">
                     <h4 class="servi-card__title">Pro</h4> 
                     <p class="servi-card__desc">Experiment the power of infinite possibilities</p>
                     <div class="servi-card__price">
@@ -145,7 +146,7 @@
                         <button class="button-primary">Get Started</button>
                     </div>
                 </div>
-                <div class="servi-card col-sm-12">
+                <div class="servi-card mb-lg-0 mb-5">
                     <h4 class="servi-card__title">Enterprise</h4>
                     <p class="servi-card__desc">Unveil new superpowers and join the Design Leaque</p>
                     <div class="servi-card__price">
@@ -178,11 +179,11 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer__up d-flex justify-content-between">
-            <div class="footer__first col-lg-3 col-md-6 col-sm-12">
+        <div class="footer__up d-flex justify-content-between row">
+            <div class="col-xs-12 col-md-12 col-lg-3 text-lg-start text-center">
                 <img class="footer__first__logo" src="../src/mscomp-logo1.png" alt="Logo">
                 <p class="footer__first__desc mb-0">Enjoy creating your website</p>
-                <ul class="social mb-0 ps-0">
+                <ul class="social mb-0 ps-0 justify-content-lg-start justify-content-center">
                     <label class="social__link"><i class="fa fa-facebook"></i></label>
                     <label class="social__link"><i class="fa fa-linkedin"></i></label>
                     <label class="social__link"><i class="fa fa-instagram"></i></label>
@@ -190,16 +191,16 @@
                 </ul>
             </div>
             <!-- Utilizo la clase column por que son 3 columnas con mismos estilos en el footer -->
-            <div class="column col-lg-3 col-md-6 col-sm-12">
+            <div class="col-xs-12 col-md-12 col-lg-3 text-lg-start text-center">
                 <h3 class="column__title">Company</h3>
                 <ul class="column__items mb-0 ps-0">
                     <li class="column__item"><a href="../pages/about.html" class="text-decoration-none">About</a></li>
                     <li class="column__item">Blog</li>
                     <li class="column__item"><a href="../pages/portfolio.html" class="text-decoration-none">Portfolio</a></li>
-                    <li class="column__item"><a href="#" class="text-decoration-none">Services</a></li>
+                    <li class="column__item"><a href="../pages/services.html" class="text-decoration-none">Services</a></li>
                 </ul>
             </div>
-            <div class="column col-lg-3 col-md-6 col-sm-12">
+            <div class="col-xs-12 col-md-12 col-lg-3 text-lg-start text-center">
                 <h3 class="column__title">Help & Support</h3>
                 <ul class="column__items mb-0 ps-0">
                     <li class="column__item"><a href="../pages/contact.html" class="text-decoration-none">Contact</a></li>
@@ -208,7 +209,7 @@
                     <li class="column__item">Support Center</li>
                 </ul>
             </div>
-            <div class="column col-lg-3 col-md-6 col-sm-12">
+            <div class="col-xs-12 col-md-12 col-lg-3 text-lg-start text-center">
                 <h3 class="column__title">Information</h3>
                 <ul class="column__items mb-0 ps-0"> 
                     <li class="column__item">All Services</li>
@@ -219,9 +220,9 @@
             </div>
         </div>
         <div class="footer__down">
-            <div class="footer__down__container">
-                <p class="mb-0">Copyright@2022 <a href="#" class="text-decoration-none">MS Comp</a>.All rights reserved</p>
-                <a href="#" class="text-decoration-none">Terms and conditions</a>
+            <div class="footer__down__container d-flex justify-content-between row">
+                <p class="mb-0 col-xs-12 col-md-12 col-lg-4 text-lg-start text-center">Copyright@2022 <a href="#" class="text-decoration-none">MS Comp</a>.All rights reserved</p>
+                <a href="#" class="text-decoration-none col-xs-12 col-md-12 col-lg-4 text-lg-end text-center">Terms and conditions</a>
             </div>
         </div>
     </footer>
