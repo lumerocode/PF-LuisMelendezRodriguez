@@ -1,0 +1,16 @@
+@import "../utilities/variables";
+
+.button-primary {
+    background: $color-primary;
+    color: $color-white;
+    padding: 16px 32px;
+    border-radius: 10px;
+    border: 2px solid $color-primary;
+}
+
+ .button-primary:hover {
+     background-color: transparent;
+     color: $color-primary;
+     border: 2px solid $color-primary;
+     cursor: pointer;
+ }

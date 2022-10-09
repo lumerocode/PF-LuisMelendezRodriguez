@@ -1,0 +1,30 @@
+@import "../utilities/variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto;
+    background-color: $color-bg;
+    font-family: $typography;
+    /* height: 100vh; */
+}
+
+main {
+    max-width: $container-width-desktop;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        max-width: $container-width-mobile;
+    }
+
+}

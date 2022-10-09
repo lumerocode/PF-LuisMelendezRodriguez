@@ -1,0 +1,26 @@
+@import "../utilities/variables";
+
+.cover {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    margin-top: 6rem;
+    height: calc(100vh - 6rem);
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 1rem;
+        padding-right: 8rem;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+
+        &__img {
+            width: 100%;
+        }
+    }
+
+}

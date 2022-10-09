@@ -1,0 +1,66 @@
+@import "../utilities/variables";
+
+.header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background-color: $color-primary;
+    height: 6rem;
+
+    &__section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: $container-width-desktop;
+        margin: 0 auto;
+        width: 100%;
+
+        .header__logo {
+            width: 5%;
+        }
+
+        .header__nav__items {
+            display: flex;
+
+            .header__nav__link {
+                padding: 16px 24px;
+
+                a {
+                    color: $color-black;
+
+                    &:hover {
+                        color: $color-white;
+                    }
+                }
+
+                &--selected a {
+                    font-weight: bold;
+                    color: $color-white;
+                }
+        
+            }
+            
+        }
+
+        .social {
+            display: flex;
+            column-gap: 1rem;
+        }
+    }
+}
+
+/* ===================== MOBILE ===================== */
+@media screen and (max-width: 768px) {
+    .header {
+
+        &__section {
+            max-width: $container-width-mobile;
+
+            .header__nav__items, .social {
+                display: none;
+            }
+
+        }
+
+    }
+}
