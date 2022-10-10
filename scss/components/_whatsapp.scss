@@ -7,10 +7,15 @@
     background-color: $color-whatsapp;
     padding: 12px;
     border-radius: 50%;
+
+    &__link {
+    
+        img {
+            vertical-align: middle;
+            width: 40px;
+            height: 40px;
+            margin-left: 2px;
+        }
+    }
 }
 
-.whatsapp__link img {
-    vertical-align: middle;
-    width: 40px;
-    height: 40px;
-}

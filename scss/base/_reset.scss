@@ -17,6 +17,10 @@ body {
     /* height: 100vh; */
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 main {
     max-width: $container-width-desktop;
     margin: 0 auto;

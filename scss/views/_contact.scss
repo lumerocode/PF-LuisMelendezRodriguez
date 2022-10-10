@@ -1,0 +1,52 @@
+@import "../utilities/variables";
+
+// Our Contact Form
+.contact-form {
+    border-top: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+    padding: 50px 0;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__desc {
+        text-align: center;
+        margin: 1rem 0 2rem 0;
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: 4fr 2fr;
+
+        form {
+            
+        }
+
+        .contact-form__right {
+
+        }
+    }
+}
+
+.map {
+    padding-top: 50px;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__desc {
+        text-align: center;
+        margin: 1rem 0 2rem 0;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+
+        iframe {
+            width: 100%;
+        }
+    }
+}
