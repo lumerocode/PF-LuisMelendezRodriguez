@@ -82,3 +82,39 @@
     }
 
 }
+
+/* ===================== MOBILE ===================== */
+@media screen and (max-width: 768px) {
+
+    .portfolio {
+
+        &__buttons {
+
+            .portfolio__button {
+                display: flex;
+                flex-direction: column;
+                row-gap: 1rem;
+
+                li {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+
+        &__content {
+            width: 100%;
+            row-gap: 2rem;
+        }
+
+        &__button {
+
+            button {
+                width: 100%;
+            }
+            
+        }
+
+    }
+
+}

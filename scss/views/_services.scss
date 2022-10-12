@@ -150,3 +150,32 @@
         }
     }
 }
+
+/* ===================== MOBILE ===================== */
+@media screen and (max-width: 768px) {
+
+    .services {
+
+        &__buttons {
+            display: flex;
+            justify-content: center;
+
+            .buttons__container {
+                width: 100%;
+            }
+
+        }
+
+        &__cards {
+            display: flex;
+            flex-direction: column;
+            row-gap: 2rem;
+
+            .service-card {
+                width: 100%;
+            }
+        }
+
+    }
+
+}

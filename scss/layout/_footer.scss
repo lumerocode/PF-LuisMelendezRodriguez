@@ -97,6 +97,27 @@
         &__up {
             display: flex;
             flex-direction: column;
+            text-align: center;
+            row-gap: 2rem;
+
+            .footer__first {
+
+                .social {
+                    justify-content: center;
+                }
+            }
+
+            .column {
+
+                &__title {
+                    margin-bottom: 0.5rem;
+                }
+
+            }
+        }
+
+        &__down {
+            text-align: center;
         }
         
     }

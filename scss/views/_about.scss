@@ -113,3 +113,68 @@
         }
     }
 }
+
+/* ===================== MOBILE ===================== */
+@media screen and (max-width: 768px) {
+
+    //What we do
+    .wedo {
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+
+    // Vision - Mission
+    .vimi {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+
+        &__up {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                padding: 0;
+            }
+
+            &__content {
+                margin: 1rem 0 0 0;
+
+                .vimi__up__title {
+                    text-align: center;
+                }
+            }
+        }
+
+        &__down {
+            display: flex;
+            flex-direction: column-reverse;
+
+            &__content {
+                margin: 1rem 0 0 0;
+
+                .vimi__down__title {
+                    text-align: center;
+                }
+            }
+
+            img {
+                padding: 0;
+            }
+        }
+    }
+
+    //Team
+    .team {
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 2rem;
+        }
+    }
+}

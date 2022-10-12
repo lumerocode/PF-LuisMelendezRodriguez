@@ -15,6 +15,10 @@
         margin: 0 auto;
         width: 100%;
 
+        .toggle-menu {
+            display: none;
+        }
+
         .header__logo {
             width: 5%;
         }
@@ -54,9 +58,41 @@
     .header {
 
         &__section {
-            max-width: $container-width-mobile;
+            max-width: 100%;
+            flex-direction: column;
+            transform: translateY(-100%);
 
-            .header__nav__items, .social {
+            .toggle-menu {
+                display: block;
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                cursor: pointer;
+                
+            }
+
+            .toggle-menu--show {
+                transform: translateY(0);
+            }
+            
+
+            .header__logo {
+                display: none;
+            }
+
+            .header__nav {
+                width: 100%;
+
+                &__items {
+                    text-align: center;
+                    background-color: $color-primary;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+                
+
+            .social {
                 display: none;
             }
 
