@@ -12,6 +12,18 @@
         justify-content: center;
         row-gap: 1rem;
         padding-right: 8rem;
+
+        &__buttons {
+            display: flex;
+            column-gap: 3rem;
+
+            .button-secondary {
+        
+                i {
+                    margin-right: 0.5rem;
+                }
+            }
+        }
     }
 
     &__right {
