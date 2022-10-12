@@ -60,21 +60,22 @@
         &__section {
             max-width: 100%;
             flex-direction: column;
-            transform: translateY(-100%);
+            
 
             .toggle-menu {
                 display: block;
                 position: absolute;
-                top: 1rem;
+                top: 2rem;
                 right: 1rem;
                 cursor: pointer;
-                
+                z-index: 1;
             }
 
-            .toggle-menu--show {
-                transform: translateY(0);
+            .main-menu--show {
+                transition: transform 0.3s;
+                transform: translateY(100%);
             }
-            
+
 
             .header__logo {
                 display: none;
@@ -88,9 +89,9 @@
                     background-color: $color-primary;
                     display: flex;
                     flex-direction: column;
+                    transform: translateY(-100%);
                 }
             }
-                
 
             .social {
                 display: none;

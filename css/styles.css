@@ -148,16 +148,17 @@ main {
 @media screen and (max-width: 768px) {
   .header__section {
     max-width: 100%;
-    flex-direction: column;
-    transform: translateY(-100%); }
+    flex-direction: column; }
     .header__section .toggle-menu {
       display: block;
       position: absolute;
-      top: 1rem;
+      top: 2rem;
       right: 1rem;
-      cursor: pointer; }
-    .header__section .toggle-menu--show {
-      transform: translateY(0); }
+      cursor: pointer;
+      z-index: 1; }
+    .header__section .main-menu--show {
+      transition: transform 0.3s;
+      transform: translateY(100%); }
     .header__section .header__logo {
       display: none; }
     .header__section .header__nav {
@@ -166,7 +167,8 @@ main {
         text-align: center;
         background-color: #54BD95;
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        transform: translateY(-100%); }
     .header__section .social {
       display: none; } }
 
