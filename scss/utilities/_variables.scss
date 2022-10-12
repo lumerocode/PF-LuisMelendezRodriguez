@@ -1,5 +1,14 @@
-$color-primary: #54BD95;
-$color-primary-gradient: #85DAB9;
+$color-main: (
+    primary: #54BD95,
+    gradient: #85DAB9,
+);
+
+//Gap entre Buttons 
+$grid-column-button: 1rem;
+
+//Gap entre contenedores
+$grid-column-gap: $grid-column-button * 2;
+
 $color-secondary: #161C28;
 $color-text1: #A6A6A6;
 $color-border: #6a6a6a42;
@@ -13,4 +22,8 @@ $typography : 'Rubik', sans-serif;
 $container-width-desktop: 82%;
 $container-width-tablet: 84%;
 $container-width-mobile: 86%;
+
+
+
+
 

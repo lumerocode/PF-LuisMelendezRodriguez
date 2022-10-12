@@ -208,18 +208,18 @@ main {
             color: #54BD95; }
         .footer__up .column__items .column__item:hover {
           color: #54BD95; }
-  .footer__down {
-    color: #fff;
-    border-top: 1px solid #A6A6A6;
-    padding: 1rem 0; }
-    .footer__down__container {
-      display: flex;
-      justify-content: center;
-      max-width: 82%;
-      margin: auto;
-      align-items: center; }
-      .footer__down__container a {
-        color: #54BD95; }
+    .footer__up__down {
+      color: #fff;
+      border-top: 1px solid #A6A6A6;
+      padding: 1rem 0; }
+      .footer__up__down__container {
+        display: flex;
+        justify-content: center;
+        max-width: 82%;
+        margin: auto;
+        align-items: center; }
+        .footer__up__down__container a {
+          color: #54BD95; }
 
 /* ===================== MOBILE ===================== */
 @media screen and (max-width: 768px) {

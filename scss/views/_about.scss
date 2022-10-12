@@ -1,4 +1,5 @@
 @import "../utilities/variables";
+@import "../utilities/mixins";
 
 // What we do
 .wedo {
@@ -129,8 +130,7 @@
 
     // Vision - Mission
     .vimi {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         row-gap: 2rem;
 
         &__up {

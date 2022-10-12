@@ -1,4 +1,5 @@
 @import "../utilities/variables";
+@import "../utilities/mixins";
 
 .cover {
     display: grid;
@@ -57,8 +58,7 @@
             }
 
             &__buttons {
-                display: flex;
-                flex-direction: column;
+                @include flex-column;
                 row-gap: 1rem;
     
                 .button-secondary {

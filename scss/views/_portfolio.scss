@@ -1,4 +1,5 @@
 @import "../utilities/variables";
+@import "../utilities/mixins";
 
 .portfolio {
     border-top: 1px solid $color-border;
@@ -23,21 +24,21 @@
 
             &__item {
                 background: transparent;
-                color: $color-primary;
+                color: map-get($color-main, primary);
                 padding: 14px 32px;
                 border-radius: 10px;
-                border: 2px solid $color-primary;
+                border: 2px solid map-get($color-main, primary);
 
                 &:hover {
-                    background-color: $color-primary;
+                    background-color: map-get($color-main, primary);
                     color: $color-white;
-                    border: 2px solid $color-primary;
+                    border: 2px solid map-get($color-main, primary);
                     cursor: pointer;
                 }
             }
 
             .portfolio__button__item--selected {
-                background: $color-primary;
+                background: map-get($color-main, primary);
                 color: $color-white;
             }
 
@@ -91,8 +92,7 @@
         &__buttons {
 
             .portfolio__button {
-                display: flex;
-                flex-direction: column;
+                @include flex-column;
                 row-gap: 1rem;
 
                 li {

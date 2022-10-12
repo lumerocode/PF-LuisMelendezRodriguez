@@ -1,4 +1,5 @@
 @import "../utilities/variables";
+@import "../utilities/mixins";
 
 // Clients
 .clients {
@@ -89,9 +90,9 @@
             padding: 10px;
 
             .button-primary:hover {
-                background-color: $color-primary;
+                background-color: map-get($color-main, primary);
                 color: $color-white;
-                border: 2px solid $color-primary;
+                border: 2px solid map-get($color-main, primary);
                 cursor: pointer;
             }
 
@@ -101,11 +102,11 @@
                 border: 2px solid transparent;
 
                 &:hover {
-                    background-color: $color-primary;
+                    background-color: map-get($color-main, primary);
                     color: #fff;
                     padding: 16px 38px;
                     border-radius: 10px;
-                    border: 2px solid $color-primary;
+                    border: 2px solid map-get($color-main, primary);
                     cursor: pointer;
                 }
             }
@@ -186,7 +187,7 @@
             row-gap: 0.5rem;
 
             i {
-                background-color: $color-primary;
+                background-color: map-get($color-main, primary);
                 color: $color-white;
                 font-size: 0.8rem;
                 padding: 4px;
@@ -335,7 +336,7 @@
                     border-radius: 0.5rem;
     
                     &:focus {
-                        border: 2px solid $color-primary;
+                        border: 2px solid map-get($color-main, primary);
                         outline: 0 none;
                     }
 
@@ -394,8 +395,7 @@
     .clients {
 
         &__container {
-            display: flex;
-            flex-direction: column;
+            @include flex-column;
             row-gap: 2rem;
             align-items: center;
             
@@ -408,8 +408,7 @@
 
     //Crafted for
     .craf { 
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
 
         &__right {
             margin-top: 1.5rem;
@@ -450,7 +449,7 @@
         &__cards {
             display: flex;
             flex-direction: column;
-            row-gap: 2rem;
+            row-gap: $grid-column-gap;
 
             .plan-card {
                 width: 100%;
@@ -476,8 +475,7 @@
     .blog {
 
         &__cards{
-            display: flex;
-            flex-direction: column;
+            @include flex-column;
             row-gap: 2rem;
 
             .blog-cards__items {
@@ -507,8 +505,7 @@
 
     //Tunned 
     .tunned {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
 
         &__right {
 
@@ -542,8 +539,7 @@
     .test {
 
         &__cards {
-            display: flex;
-            flex-direction: column;
+            @include flex-column;
             row-gap: 2rem;
 
             .test-card {

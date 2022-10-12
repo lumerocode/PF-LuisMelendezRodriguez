@@ -1,31 +1,31 @@
 @import "../utilities/variables";
 
 .button-primary {
-    background: $color-primary;
+    background: map-get($color-main, primary);
     color: $color-white;
     padding: 16px 32px;
     border-radius: 10px;
-    border: 2px solid $color-primary;
+    border: 2px solid map-get($color-main, primary);
 }
 
  .button-primary:hover {
      background-color: transparent;
-     color: $color-primary;
-     border: 2px solid $color-primary;
+     color: map-get($color-main, primary);
+     border: 2px solid map-get($color-main, primary);
      cursor: pointer;
  }
 
  .button-secondary {
     background: transparent;
-    color: $color-primary;
+    color: map-get($color-main, primary);
     padding: 16px 32px;
     border-radius: 10px;
-    border: 2px solid $color-primary;
+    border: 2px solid map-get($color-main, primary);
 }
 
  .button-secondary:hover {
-     background-color: $color-primary;
+     background-color: map-get($color-main, primary);
      color: $color-white;
-     border: 2px solid $color-primary;
+     border: 2px solid map-get($color-main, primary);
      cursor: pointer;
  }

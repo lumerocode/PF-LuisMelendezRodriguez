@@ -4,7 +4,7 @@
     position: fixed;
     display: flex;
     width: 100%;
-    background-color: $color-primary;
+    background-color: map-get($color-main, primary);
     height: 6rem;
 
     &__section {
@@ -86,7 +86,7 @@
 
                 &__items {
                     text-align: center;
-                    background-color: $color-primary;
+                    background-color: map-get($color-main, primary);
                     display: flex;
                     flex-direction: column;
                     transform: translateY(-100%);
