@@ -14,6 +14,10 @@
         row-gap: 1rem;
         padding-right: 8rem;
 
+        &__desc {
+            text-align: left;
+        }
+
         &__buttons {
             display: flex;
             column-gap: 3rem;
@@ -33,6 +37,7 @@
 
         &__img {
             width: 100%;
+            border-radius: 1.5rem;
         }
     }
 

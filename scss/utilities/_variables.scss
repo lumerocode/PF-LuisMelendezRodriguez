@@ -1,12 +1,13 @@
+//Main colors
 $color-main: (
     primary: #54BD95,
     gradient: #85DAB9,
 );
 
-//Gap entre Buttons 
+//Gap between Buttons 
 $grid-column-button: 1rem;
 
-//Gap entre contenedores
+//Gap between containers
 $grid-column-gap: $grid-column-button * 2;
 
 $color-secondary: #161C28;

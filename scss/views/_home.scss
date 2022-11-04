@@ -15,10 +15,25 @@
     &__container {
         display: flex;
         justify-content: space-between;
-        
-        img {
-            cursor: pointer;
+
+        &:hover {
+
+            .client_img {
+                filter: blur(3px);
+                opacity: 0.5;
+                transform: scale(.98);
+                box-shadow: none;
+
+                &:hover {
+                    transform: scale(1);
+                    filter: blur(0px);
+                    opacity: 1;
+                }
+                
+            }
+
         }
+
     }
 
 }
@@ -34,6 +49,7 @@
         
         img {
             width: 100%;
+            border-radius: 1.5rem;
         }
     }
 
@@ -202,6 +218,7 @@
 
         img {
             width: 100%;
+            border-radius: 1.5rem;
         }
     }
 
@@ -237,6 +254,7 @@
 
                 &__img {
                     width: 100%;
+                    border-radius: 1.5rem;
                 }
                 
                 &__date {
@@ -270,6 +288,7 @@
 
                 .blog-target__img {
                     width: 100px;
+                    border-radius: 0.6rem;
                 }
 
                 .blog-target__content {
@@ -378,6 +397,11 @@
             justify-items: center;
             align-items: center;
 
+            &__img {
+                border-radius: 50%;
+                width: 60%;
+            }
+
             &__comment {
                 text-align: justify;
                 border-bottom: 1px solid $color-border;
@@ -399,9 +423,16 @@
             row-gap: 2rem;
             align-items: center;
             
-            img {
-                width: 50%;
+            a {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 75%;
+                }
+
             }
+            
         }
 
     }

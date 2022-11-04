@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
     <link rel="icon" href="./favicon.ico">
-    <!-- Enlace externo de estilos -->
+    <!-- Style external link -->
     <link rel="stylesheet" href="./css/styles.css">
-    <!-- Link google fonts -->
+    <!-- Google fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Fontawesome Link -->
     <script src="https://kit.fontawesome.com/152ce6a8e1.js" crossorigin="anonymous"></script>
     <title>Home</title>
 </head>
@@ -20,31 +21,31 @@
     <header class="header">
         <section class="header__section">
 
+            <!-- Header Responsive -->
             <div id="toggle-menu" class="toggle-menu">
-                <img src="./src/menu_toggle.png" alt="Toggle menú">
+                <img src="./src/menu_toggle.png" alt="Toggle menu">
             </div>
 
-            <img class="header__logo" src="./src/mscomp-logo2.png" alt="Logo" width="100">
+            <!-- Header Desktop -->
+            <div class="header__logo-content">
+                <a href="#"><img class="header__logo" src="./src/mscomp-logo2.png" alt="Header Logo" width="100"></a>
+            </div>
+
             <nav id="main-menu" class="header__nav">
                 <ul class="header__nav__items">
                     <li class="header__nav__link header__nav__link--selected"> <a href="#">Home</a> </li>
-                    <li class="header__nav__link"> <a href="./pages/portfolio.html">Portfolio</a> </li>
-                    <li class="header__nav__link"> <a href="./pages/services.html">Services</a> </li>
-                    <li class="header__nav__link"> <a href="./pages/about.html">About</a> </li>
-                    <li class="header__nav__link"> <a href="./pages/contact.html">Contact</a> </li>
-                    <!-- <li class="header__nav__link"> <a href="../index.html" target="_blank">Home</a> </li>
-                    <li class="header__nav__link"> <a href="./portfolio.html" target="_blank">Portfolio</a> </li>
-                    <li class="header__nav__link header__nav__link--selected"> <a href="#">Services</a> </li>
-                    <li class="header__nav__link"> <a href="./about.html" target="_blank">About</a> </li>
-                    <li class="header__nav__link"> <a href="./contact.html" target="_blank">Contact</a> </li> -->
+                    <li class="header__nav__link"> <a href="./pages/portfolio.html" target="_blank">Portfolio</a> </li>
+                    <li class="header__nav__link"> <a href="./pages/services.html" target="_blank">Services</a> </li>
+                    <li class="header__nav__link"> <a href="./pages/about.html" target="_blank">About</a> </li>
+                    <li class="header__nav__link"> <a href="./pages/contact.html" target="_blank">Contact</a> </li>
                 </ul>
             </nav>
-            <!-- Utilizo la clase social por que tambien la utilizaré en el footer -->
+            <!-- I use the social class because I will also use it in the footer -->
             <ul class="social">
-                <label class="social__link"><i class="fa fa-facebook"></i></label>
-                <label class="social__link"><i class="fa fa-linkedin"></i></label>
-                <label class="social__link"><i class="fa fa-instagram"></i></label>
-                <label class="social__link"><i class="fa fa-twitter"></i></label>
+                <a href="https://www.facebook.com/" target="_blank"><label class="social__link"><i class="fa fa-facebook"></i></label></a>
+                <a href="https://www.linkedin.com/" target="_blank"><label class="social__link"><i class="fa fa-linkedin"></i></label></a>
+                <a href="https://www.instagram.com/" target="_blank"><label class="social__link"><i class="fa fa-instagram"></i></label></a>
+                <a href="https://www.twitter.com/" target="_blank"><label class="social__link"><i class="fa fa-twitter"></i></label></a>
             </ul>
         </section>
     </header>
@@ -57,66 +58,64 @@
                 <h1 class="cover__left__title">We're here to push your product to next level</h1>
                 <p class="cover__left__desc">We have been developing technology for StartUps for more than 2 years, we have won numerous awards in Peru and the World and that is how with all the experience gained we decided to found MSComp.</p>
                 <div class="cover__left__buttons">
-                    <button class="button-primary">Get started</button>
-                    <button class="button-secondary"><i class="fa fa-play"></i>View Demo</button>
+                    <a class="button-primary" target="_blank" href="./pages/services.html">Get started</a>
+                    <a class="button-secondary" target="_blank" href="https://www.youtube.com/"><i class="fa fa-play"></i>View Demo</a>
                 </div>
             </div>
             <div class="cover__right">
-                <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
                 <img class="cover__right__img" src="./src/home_cover.png" alt="Home Image">
             </div>
         </section>
         
         <!-- Clients -->
         <section class="clients">
-            <p class="clients__text">More than 20 companies use MSComp.</p>
+            <p class="clients__text">More than 20 world renowned companies have used MSComp</p>
             <div class="clients__container">
-                <img src="./src/unplash-logo.png" alt="Unplash Logo">
-                <img src="./src/notion-logo.png" alt="Notion Logo">
-                <img src="./src/intercom-logo.png" alt="Intercom Logo">
-                <img src="./src/descript-logo.png" alt="Descript Logo">
-                <img src="./src/grammarly-logo.png" alt="Grammarly Logo">
+                <a href="./pages/progress.html" class="client_img" target="_blank"><img loading="lazy" src="./src/unplash-logo.png" alt="Unplash Logo"></a>
+                <a href="./pages/progress.html" class="client_img" target="_blank"><img loading="lazy" src="./src/notion-logo.png" alt="Notion Logo"></a>
+                <a href="./pages/progress.html" class="client_img" target="_blank"><img loading="lazy" src="./src/intercom-logo.png" alt="Intercom Logo"></a>
+                <a href="./pages/progress.html" class="client_img" target="_blank"><img loading="lazy" src="./src/descript-logo.png" alt="Descript Logo"></a>
+                <a href="./pages/progress.html" class="client_img" target="_blank"><img loading="lazy" src="./src/grammarly-logo.png" alt="Grammarly Logo"></a>
             </div>
         </section>
 
         <!-- Crafted for -->
         <section class="craf">
             <div class="craf__left">
-                <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
-                <img src="./src/home_craf.png" alt="Image about crafted for">
+                <img src="./src/home_craf.png" loading="lazy" alt="Image about crafted for">
             </div>
             <div class="craf__right">
                 <h2 class="craf__right__title">Crafted for</h2>
                 <p class="craf__right__desc">
                     This space is created for people who want to take their business to the next level, show the digital world that it will be present so that everyone can see them through a website.</p>
                 <div class="craf__right__container">
-                    <!-- Utilizo la clase port-card por que lo utilizare 4 veces en esta sección -->
+                    <!-- I use the craf-list class because I will also use it 4 times in this section -->
                     <div class="craf-list">
-                        <img class="craf-list__img" src="./src/thunder.png" alt="Image about Startup">
+                        <img class="craf-list__img" src="./src/thunder.png" loading="lazy" alt="Image about Startup">
                         <div class="craf-list__text">
                             <h4>Startup</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                            <p>For small businesses that want to be in the digital world.</p>
                         </div>
                     </div>
                     <div class="craf-list">
-                        <img class="craf-list__img" src="./src/sass.png" alt="Image about Sass Business">
+                        <img class="craf-list__img" src="./src/sass.png" loading="lazy" alt="Image about Sass Business">
                         <div class="craf-list__text">
-                            <h4>Sass Business</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                            <h4>Saas Business</h4>
+                            <p>For Saas Business who want to sell their services for internet.</p>
                         </div>
                     </div>
                     <div class="craf-list">
-                        <img class="craf-list__img" src="./src/agency.png" alt="Image about Agency">
+                        <img class="craf-list__img" src="./src/agency.png" loading="lazy" alt="Image about Agency">
                         <div class="craf-list__text">
                             <h4>Agency</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                            <p>For agencies that want to publish their services and have a blog.</p>
                         </div>
                     </div>
                     <div class="craf-list">
-                        <img class="craf-list__img" src="./src/app.png" alt="Image about App Landing">
+                        <img class="craf-list__img" src="./src/app.png" loading="lazy" alt="Image about App Landing">
                         <div class="craf-list__text">
                             <h4>App Landing</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                            <p>For companies that only want a landing page to start offering their services.</p>
                         </div>
                     </div>
                 </div>
@@ -129,13 +128,13 @@
             <p class="plans__desc">Choose a plan that works best for you, feel free to contact us.</p>
             <div class="plans__buttons">
                 <div class="buttons__container">
-                    <!-- Utilizo la clase button-primary y button-secondaryl por que es utilizado en el home y en Services -->
+                    <!-- I use the button-primary class and button-secondary class because I will also use it in Home and Services -->
                     <button class="button-secondary">Bil Monthly</button>
                     <button class="button-primary">Bil Yearly</button>
                 </div>
             </div>
             <div class="plans__cards">
-                <!-- Utilizo la clase plan-card por que lo utilizaré 3 veces en esta sección -->
+                <!-- I use the plan-card class because I will also use it 3 times in this section -->
                 <div class="plan-card">
                     <h4 class="plan-card__title">Basic</h4>
                     <p class="plan-card__desc">Have a go and test your superpowers with this plan.</p>
@@ -179,8 +178,7 @@
                 </ul>
             </div>
             <div class="benefit__right">
-                <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
-                <img class="" src="./src/home_benefit.png" alt="Image about benefit">
+                <img src="./src/home_benefit.png" loading="lazy" alt="Image about benefit">
             </div>
         </section>
 
@@ -190,10 +188,9 @@
             <p class="blog__desc">See our recent publications and learn a little more about our work.</p>
             <div class="blog__cards">
                 <div class="blog-cards__items">
-                    <!-- Utilizo la clase blog-card por que lo utilizaré 2 veces en esta sección -->
+                    <!-- I use the blog-card class because I will also use it 2 times in this section -->
                     <div class="blog-card">
-                        <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
-                        <img class="blog-card__img" src="https://picsum.photos/200" alt="Image about the latest post">
+                        <img class="blog-card__img" src="https://picsum.photos/200" loading="lazy" alt="Image about the latest post">
                         <div class="blog-card__date">
                             <p>08-09-20</p>
                             <p>Category</p>
@@ -202,8 +199,7 @@
                         <p class="blog-card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
                     </div>
                     <div class="blog-card">
-                        <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
-                        <img class="blog-card__img" src="https://picsum.photos/200" alt="Image about the latest post">
+                        <img class="blog-card__img" src="https://picsum.photos/200" loading="lazy" alt="Image about the latest post">
                         <div class="blog-card__date">
                             <p>08-09-20</p>
                             <p>Category</p>
@@ -213,10 +209,9 @@
                     </div>
                 </div>
                 <div class="blog__targets">
-                    <!-- Utilizo la clase blog-target por que lo utilizaré 4 veces en esta sección -->
+                        <!-- I use the blog__target class because I will also use it 4 times in this section -->
                         <div class="blog__target">
-                            <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
-                            <img class="blog-target__img" src="https://picsum.photos/200" alt="Image about the latest post">
+                            <img class="blog-target__img" src="https://picsum.photos/200" loading="lazy" alt="Image about the latest post">
                             <div class="blog-target__content">
                                 <div class="blog-target__date">
                                     <p>08-09-20</p>
@@ -226,8 +221,7 @@
                             </div>
                         </div>
                         <div class="blog__target">
-                            <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
-                            <img class="blog-target__img" src="https://picsum.photos/200" alt="Image about the latest post">
+                            <img class="blog-target__img" src="https://picsum.photos/200" loading="lazy" alt="Image about the latest post">
                             <div class="blog-target__content">
                                 <div class="blog-target__date">
                                     <p>08-09-20</p>
@@ -237,8 +231,7 @@
                             </div>
                         </div>
                         <div class="blog__target">
-                            <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
-                            <img class="blog-target__img" src="https://picsum.photos/200" alt="Image about the latest post">
+                            <img class="blog-target__img" src="https://picsum.photos/200" loading="lazy" alt="Image about the latest post">
                             <div class="blog-target__content">
                                 <div class="blog-target__date">
                                     <p>08-09-20</p>
@@ -248,8 +241,7 @@
                             </div>
                         </div>
                         <div class="blog__target">
-                            <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
-                            <img class="blog-target__img" src="https://picsum.photos/200" alt="Image about the latest post">
+                            <img class="blog-target__img" src="https://picsum.photos/200" loading="lazy" alt="Image about the latest post">
                             <div class="blog-target__content">
                                 <div class="blog-target__date">
                                     <p>08-09-20</p>
@@ -257,8 +249,7 @@
                                 </div>
                                 <h5 class="blog-taget__content__title">Lorem Ipsum is simply dummy text, lais.</h5>
                             </div>
-                        </div>
-                    
+                        </div>                 
                 </div>
                 
             </div>
@@ -269,22 +260,21 @@
 
         <!-- Stay Tunned -->
         <section class="tunned">
-            <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
             <div class="tunned__left">
-                <img class="tunned__img" src="./src/home__contactus.png" alt="Image about tunned">
+                <img class="tunned__img" src="./src/home__contactus.png" loading="lazy" alt="Image about tunned">
             </div>
             <div class="tunned__right">
                 <h2 class="tunned__title">Curious to learn more? Stay tuned</h2>
                 <p class="tunned__desc">You let us know whenever you want us to update anything or think something can be optimized.</p>
-                <div class="tunned__send">
-                    <div class="tunned-send__left">
-                        <label class=""><i class="fa fa-envelope fa-2x"></i></label>
-                        <input type="email" placeholder="mscomp@gmail.com" required>
-                    </div>
-                    <div class="tunned-send__right">
-                        <button class="button-primary">Send</button>
-                    </div>
-                </div>
+                    <form class="tunned__send">
+                        <div class="tunned-send__left">
+                            <label class=""><i class="fa fa-envelope fa-2x"></i></label>
+                            <input type="email" placeholder="mscomp@gmail.com" required>
+                        </div>
+                        <div class="tunned-send__right">
+                            <button class="button-primary">Send</button>
+                        </div>
+                    </form>
             </div>
         </section>
 
@@ -293,28 +283,25 @@
             <h2 class="test__title">Testimonial</h2>
             <p class="test__desc">What better way to endorse our work, that our clients talk about their experience.</p>
             <div class="test__cards">
-                <!-- Utilizo la clase test-card por que lo utilizaré 3 veces en esta sección -->
+                <!-- I use the test-card class because I will also use it 3 times in this section -->
                 <div class="test-card">
-                    <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
-                    <img class="test-card__img" src="./src/home_test1.png" alt="Image about the personwho made the comment">
+                    <img class="test-card__img" src="./src/home_test1.png" loading="lazy" alt="Image about the personwho made the comment">
                     <p class="test-card__comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
                     <h4 class="test-card__name">José Miguel R.</h4>
                     <p class="test-card__position">CEO Soldametal</p>
                 </div>
 
                 <div class="test-card">
-                    <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
-                    <img class="test-card__img" src="./src/home_test2.png" alt="Image about the personwho made the comment">
+                    <img class="test-card__img" src="./src/home_test2.png" loading="lazy" alt="Image about the personwho made the comment">
                     <p class="test-card__comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
-                    <h4 class="test-card__name">Olinda Flor R.</h4>
+                    <h4 class="test-card__name">Marco Polo S.</h4>
                     <p class="test-card__position">CEO Pakku</p>
                 </div>
 
                 <div class="test-card">
-                    <!-- Aun no estoy seguro de las imagenes que pondre, por eso pongo una aleatoria de una repo -->
-                    <img class="test-card__img" src="./src/home_test3.png" alt="Image about the personwho made the comment">
+                    <img class="test-card__img" src="./src/home_test3.png" loading="lazy" alt="Image about the personwho made the comment">
                     <p class="test-card__comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
-                    <h4 class="test-card__name">María Milagros M.</h4>
+                    <h4 class="test-card__name">Ana Beatriz M.</h4>
                     <p class="test-card__position">CEO Boxiboom</p>
                 </div>
             </div>
@@ -325,7 +312,7 @@
     <!-- WhatsApp -->
     <div class="whatsapp"> 
         <div class="whatsapp__link">
-            <img src="./src/whatsapp.png"> 
+            <a href="https://wa.me/+51922438832?text=%C2%A1Hola+MSComp%21+Tengo+una+consulta" target="_blank"><img src="./src/whatsapp.png"></a>
         </div>
     </div>
 
@@ -333,48 +320,49 @@
     <footer class="footer">
         <div class="footer__up">
             <div class="footer__first">
-                <img class="footer__first__logo" src="./src/mscomp-logo2.png" alt="Logo">
-                <p class="footer__first__desc">Enjoy creating your website with us</p>
+                <div class="footer__logo-content">
+                    <a href="#"><img class="footer__first__logo" src="./src/mscomp-logo2.png" loading="lazy" alt="Logo" width="100"></a>
+                </div>
+                <p class="footer__first__desc">Enjoy creating your website with us.</p>
                 <ul class="social">
-                    <label class="social__link"><i class="fa fa-facebook"></i></label>
-                    <label class="social__link"><i class="fa fa-linkedin"></i></label>
-                    <label class="social__link"><i class="fa fa-instagram"></i></label>
-                    <label class="social__link"><i class="fa fa-twitter"></i></label>
+                    <a href="https://www.facebook.com/" target="_blank"><label class="social__link"><i class="fa fa-facebook"></i></label></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><label class="social__link"><i class="fa fa-linkedin"></i></label></a>
+                    <a href="https://www.instagram.com/" target="_blank"><label class="social__link"><i class="fa fa-instagram"></i></label></a>
+                    <a href="https://www.twitter.com/" target="_blank"><label class="social__link"><i class="fa fa-twitter"></i></label></a>
                 </ul>
             </div>
-            <!-- Utilizo la clase column por que son 3 columnas con mismos estilos en el footer -->
+            <!-- I use the column class because I will also use it 3 times in the footer -->
             <div class="column">
                 <h3 class="column__title">Company</h3>
                 <ul class="column__items">
-                    <li class="column__item"><a href="./pages/about.html">About</a></li>
-                    <li class="column__item">Blog</li>
-                    <li class="column__item"><a href="./pages/portfolio.html">Portfolio</a></li>
-                    <li class="column__item"><a href="./pages/services.html">Services</a></li>
+                    <li class="column__item"><a href="./pages/about.html" target="_blank">About</a></li>
+                    <li class="column__item"><a href="./pages/progress.html" target="_blank">Blog</a></li>
+                    <li class="column__item"><a href="./pages/portfolio.html" target="_blank">Portfolio</a></li>
+                    <li class="column__item"><a href="./pages/services.html" target="_blank">Services</a></li>
                 </ul>
             </div>
             <div class="column">
                 <h3 class="column__title">Help & Support</h3>
                 <ul class="column__items">
-                    <li class="column__item"><a href="./pages/contact.html">Contact</a></li>
-                    <li class="column__item">FAQ</li>
-                    <li class="column__item">Testimonial</li>
-                    <li class="column__item">Support Center</li>
+                    <li class="column__item"><a href="./pages/contact.html" target="_blank">Contact</a></li>
+                    <li class="column__item"><a href="./pages/progress.html" target="_blank">FAQ</a></li>
+                    <li class="column__item"><a href="./pages/progress.html" target="_blank">Testimonial</a></li>
+                    <li class="column__item"><a href="./pages/progress.html" target="_blank">Support Center</a></li>
                 </ul>
             </div>
             <div class="column">
                 <h3 class="column__title">Information</h3>
                 <ul class="column__items"> 
-                    <li class="column__item">All Services</li>
-                    <li class="column__item">Product Design</li>
-                    <li class="column__item">Web Development</li>
-                    <li class="column__item">Consulting & Support</li>
+                    <li class="column__item"><a href="./pages/progress.html" target="_blank">All Services</a></li>
+                    <li class="column__item"><a href="./pages/progress.html" target="_blank">Product Design</a></li>
+                    <li class="column__item"><a href="./pages/progress.html" target="_blank">Web Development</a></li>
+                    <li class="column__item"><a href="./pages/progress.html" target="_blank">Consulting & Support</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer__down">
             <div class="footer__down__container">
                 <p>Copyright@2022 <a href="#">MS Comp</a>.All rights reserved</p>
-                <!-- <a href="#">Terms and conditions</a> -->
             </div>
         </div>
     </footer>
