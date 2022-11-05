@@ -120,6 +120,7 @@
                     border-radius: 20px;
                     background-color: transparent;
                     color: map-get($color-main, primary);
+                    width: 100%;
 
                     &:hover {
                         background-color: map-get($color-main, primary);
@@ -141,6 +142,7 @@
             .button-primary{
                 background-color: map-get($color-main, primary);
                 color: $color-white;
+                width: 100%;
 
                 &:hover {
                 background-color: transparent;
