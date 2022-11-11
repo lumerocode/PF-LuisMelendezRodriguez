@@ -23,7 +23,7 @@
             column-gap: 3rem;
 
             &__item {
-                background: transparent;
+                background: #F9FAFB;
                 color: map-get($color-main, primary);
                 padding: 14px 32px;
                 border-radius: 10px;
@@ -58,6 +58,11 @@
             display: grid;
             border: 2px solid $color-text1;
             border-radius: 1.5rem;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
 
             &__img {
                 width: 100%;

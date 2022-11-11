@@ -25,10 +25,20 @@ main {
 
 h1 {
     font-size: 3.6rem;
+    color: $color-secondary;
 }
 
 h2 {
     font-size: 2.2rem;
+    color: $color-secondary;
+}
+
+h3 {
+    color: $color-secondary;
+}
+
+h4 {
+    color: $color-secondary;
 }
 
 p {
@@ -40,6 +50,11 @@ p {
 @media screen and (max-width: 768px) {
     main {
         max-width: $container-width-mobile;
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: $color-secondary;
     }
 
     ::-webkit-scrollbar {

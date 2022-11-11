@@ -100,8 +100,8 @@
         justify-content: center;
 
         .buttons__container {
-            background: linear-gradient(145deg,#e2e8ec,$color-white);
-            box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px $color-white;
+            background: #F9FAFB;
+            border: 2px solid map-get($color-main, primary);
             border-radius: 10px;
             padding: 10px;
 
@@ -136,13 +136,24 @@
 
         .plan-card {
             background: #F9FAFB;
-            box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #fff;
+            border: 2px solid map-get($color-main, primary);
             border-radius: 20px;    
             padding: 40px;
             width: 374px;
             height: 374px;
             display: grid;
             justify-items: center;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+                cursor: pointer;
+
+                .button-primary {
+                    background: #F9FAFB;
+                    color: map-get($color-main, primary);
+                }
+            }
 
             a {
                 display: flex;
@@ -329,6 +340,7 @@
     &__left {
         img {
             width: 100%;
+            border-radius: 1.5rem;
         }
     }
 
@@ -392,7 +404,7 @@
 
         .test-card {
             background: #F9FAFB;
-            box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #fff;
+            border: 2px solid map-get($color-main, primary);
             border-radius: 20px;    
             padding: 40px;
             width: 374px;
@@ -400,6 +412,11 @@
             display: grid;
             justify-items: center;
             align-items: center;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
 
             &__img {
                 border-radius: 50%;

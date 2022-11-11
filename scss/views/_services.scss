@@ -17,8 +17,8 @@
         justify-content: center;
 
         .buttons__container {
-            background: linear-gradient(145deg,#e2e8ec,$color-white);
-            box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px $color-white;
+            background: #F9FAFB;
+            border: 2px solid map-get($color-main, primary);
             border-radius: 10px;
             padding: 10px;
 
@@ -53,13 +53,19 @@
 
         .service-card {
             background: #F9FAFB;
-            box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #fff;
+            border: 2px solid map-get($color-main, primary);
             border-radius: 20px;    
             padding: 40px;
             width: 374px;
             height: 584px;
             display: grid;
             justify-items: center;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+                cursor: pointer;
+            }
 
             &__title {
                 text-align: center;

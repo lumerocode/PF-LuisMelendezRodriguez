@@ -9,14 +9,14 @@
 }
 
  .button-primary:hover {
-     background-color: transparent;
+     background: #F9FAFB;
      color: map-get($color-main, primary);
      border: 2px solid map-get($color-main, primary);
      cursor: pointer;
  }
 
  .button-secondary {
-    background: transparent;
+    background: #F9FAFB;
     color: map-get($color-main, primary);
     padding: 16px 32px;
     border-radius: 10px;
