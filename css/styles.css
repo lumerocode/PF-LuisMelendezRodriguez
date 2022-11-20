@@ -818,7 +818,7 @@ p {
       border-radius: 10px;
       display: grid;
       align-items: center;
-      padding: 26px 38px;
+      padding: 26px;
       width: 100%; }
       .services__cards .service-card__items .card-items {
         display: flex;
@@ -1126,7 +1126,7 @@ p {
     display: flex;
     flex-direction: column-reverse;
     height: auto;
-    margin-top: 6rem;
+    margin-top: 5rem;
     padding-bottom: 50px; }
     .progress__left {
       padding-right: 0;
